@@ -1,7 +1,7 @@
 "use client"
-import HomeButton from "@/app/components/home-button";
+import HomeButton from "@/app/components/header/home-button";
 import Link from "next/link";
-import HamburgerMenu from "@/app/components/header/hamburger-menu";
+import HamburgerMenuButton from "@/app/components/header/hamburger-menu-button";
 import { useSession } from "next-auth/react";
 
 const Header = () => {
@@ -10,8 +10,8 @@ const Header = () => {
 
 	return (
 		<header className="bg-gray-800 h-1/12 flex justify-between items-center p-5">
-			<div className="flex items-center justify-center gap-5">
-				<HamburgerMenu/>
+			<div className="flex sm:items-center sm:justify-center sm:gap-5 sm:flex-row sm:w-auto flex-row-reverse justify-between w-full">
+				<HamburgerMenuButton/>
 				<HomeButton />
 			</div>
 			{!session &&

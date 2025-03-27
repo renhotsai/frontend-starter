@@ -6,7 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 
 import React, {} from 'react'
 
-const HamburgerMenu = () => {
+const HamburgerMenuButton = () => {
 	const {sideMenu, toggleSideMenu} = useSideMenu()
 	return (
 		<button onClick={toggleSideMenu}>
@@ -19,4 +19,4 @@ const HamburgerMenu = () => {
 		</button>
 	)
 }
-export default HamburgerMenu;
+export default HamburgerMenuButton;
