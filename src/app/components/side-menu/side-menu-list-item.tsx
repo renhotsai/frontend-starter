@@ -11,7 +11,7 @@ const SideMenuListItem = ({name,uri}:SideMenuListItemProps) =>{
 	const { toggleSideMenu  } = useSideMenu();
 
 	return (
-		<li className={" border flex justify-center p-5"}>
+		<li className={"flex justify-center p-5"}>
 			<Link href={uri} onClick={toggleSideMenu}>{name}</Link>
 		</li>
 	)

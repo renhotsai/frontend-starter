@@ -8,7 +8,7 @@ const SideMenuList = () => {
 	]
 
 	return (
-		<ul>
+		<ul className={'h-full'}>
 			{menuList.map((item, index) => (
 				<SideMenuListItem key={index} name={item.name} uri={item.url} />
 			))}
