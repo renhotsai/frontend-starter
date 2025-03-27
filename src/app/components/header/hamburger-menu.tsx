@@ -1,5 +1,5 @@
 "use client"
-import { useSideMenu } from "@/context/side-menu-context";
+import { useSideMenu } from "@/app/context/side-menu-context";
 import { PiList } from "react-icons/pi";
 import { RxCross2 } from "react-icons/rx";
 

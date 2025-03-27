@@ -1,7 +1,7 @@
 "use client"
 import { createContext, useContext, useState } from "react";
-import Header from "@/components/header";
-import SideMenu from "@/components/side-menu";
+import Page from "@/app/components/header/page";
+import SideMenu from "@/app/components/side-menu/page";
 
 type SideMenuContextProviderProps = {
 	children: React.ReactNode;

@@ -1,8 +1,9 @@
 import "./globals.css";
-import Header from "@/components/header";
-import SideMenuContextProvider from "@/context/side-menu-context";
-import SideMenu from "@/components/side-menu";
+
+import SideMenuContextProvider from "@/app/context/side-menu-context";
+import SideMenu from "@/app/components/side-menu/page";
 import { SessionProvider } from "next-auth/react";
+import Header from "@/app/components/header/page";
 
 export default function RootLayout ({
 	                                    children,
@@ -14,10 +15,10 @@ export default function RootLayout ({
 		<body className="h-screen">
 		<SessionProvider>
 		<SideMenuContextProvider>
-			<Header/>
+			<Header />
 			<div className={"flex h-11/12"}>
 				<SideMenu/>
-				<div className={"absolute sm:static"}>
+				<div className={"absolute sm:static z-0"}>
 					{children}
 				</div>
 			</div>

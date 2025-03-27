@@ -1,4 +1,4 @@
-import { signOutAction } from "@/actions/auth";
+import { signOutAction } from "@/app/actions/auth";
 
 const SignOutButton = () => {
 	return <form
