@@ -1,4 +1,5 @@
 import { signIn } from "@/auth"
+import { FaGithub } from "react-icons/fa";
 
 
 const SignInButton = () => {
@@ -9,7 +10,7 @@ const SignInButton = () => {
 				await signIn("github", { redirectTo: "/" })
 			}}
 		>
-			<button type="submit">Sign in</button>
+			<button type="submit"><FaGithub/></button>
 		</form>
 	)
 }
