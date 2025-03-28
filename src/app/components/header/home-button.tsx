@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const HomeButton = () => (
-	<Link href="/public">
+	<Link href="/">
 		<h1>Home</h1>
 	</Link>
 )
