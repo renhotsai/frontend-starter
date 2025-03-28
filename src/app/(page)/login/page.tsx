@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { SubmitButton } from '@/app/components/auth/submit-button';
 import { signIn } from '@/auth';
 import { Form } from "@/app/components/auth/form";
+import Separator from "@/app/components/auth/Separator";
+import OauthSignIn from "@/app/components/auth/OAuthSignIn";
+import SignInButton from "@/app/components/auth/signin-button";
 
 const Login = () => {
 	return (
@@ -25,6 +28,7 @@ const Login = () => {
 					}}
 				>
 					<SubmitButton>Sign in</SubmitButton>
+					<Separator text={'or'}/>
 					<p className="text-center text-sm text-gray-500">
 						{"Don't have an account? "}
 						<Link href="/register" className="font-semibold text-gray-200">
@@ -35,7 +39,8 @@ const Login = () => {
 				</Form>
 			</div>
 		</div>
-	);
+	)
+		;
 }
 
 export default Login;

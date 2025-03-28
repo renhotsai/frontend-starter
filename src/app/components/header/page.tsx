@@ -1,12 +1,10 @@
-"use client"
+'use client'
 import HomeButton from "@/app/components/header/home-button";
-import Link from "next/link";
 import HamburgerMenuButton from "@/app/components/header/hamburger-menu-button";
-import { useSession } from "next-auth/react";
+import LoginButton from "@/app/components/header/login-button";
+
 
 const Header = () => {
-
-	const { data:session } = useSession();
 
 	return (
 		<header className="bg-gray-800 h-1/12 flex justify-between items-center p-5">
@@ -14,8 +12,7 @@ const Header = () => {
 				<HamburgerMenuButton/>
 				<HomeButton />
 			</div>
-			{!session &&
-			<Link href="/signIn">Login</Link>}
+			<LoginButton/>
 		</header>
 	)
 }
