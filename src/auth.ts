@@ -12,7 +12,6 @@ export const {handlers, auth, signIn, signOut} = NextAuth({
 			return !!auth
 		},
 		redirect:({ url, baseUrl})=>{
-			console.log(url)
 			return baseUrl
 		}
 	},
