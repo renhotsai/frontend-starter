@@ -13,8 +13,8 @@ const SideMenuListItem = ({name, uri}: SideMenuListItemProps) => {
 	return (
 		<li>
 			<Link href={uri} onClick={toggleSideMenu}
-			      className={"flex justify-center p-5 w-full group hover:bg-gray-600"}>
-				  <span className="group-hover:border-b ">{name}</span>
+			      className={"flex justify-center p-5 w-full group hover:bg-gray-600 cursor-default"}>
+				  <span className={"group-hover:border-b"}>{name}</span>
 			</Link>
 		</li>
 	)
