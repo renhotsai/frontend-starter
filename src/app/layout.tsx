@@ -12,13 +12,13 @@ export default function RootLayout ({
 }>) {
 	return (
 		<html lang="en">
-		<body className="h-screen">
+		<body className="h-screen w-screen overflow">
 		<SessionProvider>
 		<SideMenuContextProvider>
 			<Header />
-			<div className={"flex h-11/12"}>
+			<div className={"flex h-11/12 w-full"}>
 				<SideMenu/>
-				<div className={"absolute sm:static z-0"}>
+				<div className={"sm:static z-0"}>
 					{children}
 				</div>
 			</div>
