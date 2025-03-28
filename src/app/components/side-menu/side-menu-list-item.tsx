@@ -6,13 +6,16 @@ type SideMenuListItemProps = {
 	uri: string
 }
 
-const SideMenuListItem = ({name,uri}:SideMenuListItemProps) =>{
+const SideMenuListItem = ({name, uri}: SideMenuListItemProps) => {
 
-	const { toggleSideMenu  } = useSideMenu();
+	const {toggleSideMenu} = useSideMenu();
 
 	return (
-		<li className={"flex justify-center p-5"}>
-			<Link href={uri} onClick={toggleSideMenu}>{name}</Link>
+		<li>
+			<Link href={uri} onClick={toggleSideMenu}
+			      className={"flex justify-center p-5 w-full group hover:bg-gray-600"}>
+				  <span className="group-hover:border-b ">{name}</span>
+			</Link>
 		</li>
 	)
 }
